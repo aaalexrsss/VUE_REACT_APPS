@@ -1,0 +1,79 @@
+:root {
+  --color-fondo: #f4f6f8;
+  --color-texto: #202833;
+  --color-barra: #16324f;
+  --color-texto-barra: #ffffff;
+  --color-tarjeta: #ffffff;
+  --color-borde: #cbd5df;
+  --color-boton: #1769aa;
+  --color-boton-hover: #104e80;
+
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--color-barra);
+  color: var(--color-texto-barra);
+}
+
+.marca {
+  color: var(--color-texto-barra);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0.5rem 0 1.5rem;
+  padding: 0.7rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 5px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  padding: 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  background: var(--color-tarjeta);
+}
+
+button,
+.boton {
+  display: inline-block;
+  margin: 0.4rem 0.4rem 0.4rem 0;
+  padding: 0.6rem;
+  border: 0;
+  border-radius: 5px;
+  background: var(--color-boton);
+  color: var(--color-texto-barra);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover,
+.boton:hover {
+  background: var(--color-boton-hover);
+}
